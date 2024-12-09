@@ -39,3 +39,8 @@ app.use((req, res, next) => {
 app.use("/api/posts", postRoute);
 app.use("/api/comments", commentRoute);
 app.use("/api/users", userRoute);
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Our Server is listening on http://localhost:${PORT}`);
+});
