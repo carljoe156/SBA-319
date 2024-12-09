@@ -13,7 +13,7 @@ const db = require("./db/conn");
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Custom middleware to log requests
+// Our Custom middleware to log requests
 app.use((req, res, next) => {
   console.log("Middleware: I run for all routes");
   next();
