@@ -6,8 +6,10 @@ dotenv.config();
 const postRoute = require("./routes/post.route");
 const commentRoute = require("./routes/comment.route");
 const userRoute = require("./routes/user.route");
+const bodyParser = require("body-parser");
 // Import DB connection to connect it to MongoDB)
 const db = require("./db/conn");
+// const mongoose = require("mongoose");
 
 // Our Middleware
 app.use(express.json());
