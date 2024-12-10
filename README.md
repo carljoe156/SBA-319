@@ -1,1 +1,10 @@
-# SBA-319
+# SBA-Module-319-MongoDB-Application
+
+## Objectives
+
+- Create a server application with Node, Express, and MongoDB.
+- Create a CRUD API using Express and MongoDB.
+- Create MongoDB indexes.
+- Use MongoDB indexing to make efficient queries.
+- Create MongoDB validation rules.
+- Use MongoDB validation to ensure data consistency.

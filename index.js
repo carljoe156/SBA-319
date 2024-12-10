@@ -6,6 +6,7 @@ dotenv.config();
 const postRoute = require("./routes/post.route");
 const commentRoute = require("./routes/comment.route");
 const userRoute = require("./routes/user.route");
+const seedRoute = require("./routes/seed.route");
 const bodyParser = require("body-parser");
 // Import DB connection to connect it to MongoDB)
 const db = require("./db/conn");
@@ -41,6 +42,7 @@ app.use((req, res, next) => {
 app.use("/api/posts", postRoute);
 app.use("/api/comments", commentRoute);
 app.use("/api/users", userRoute);
+app.use("/api/seed", seedRoute);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
