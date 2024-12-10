@@ -26,6 +26,7 @@ const getPostById = async (req, res) => {
 };
 
 // This Create a new post for the Blog
+// This works
 const addPost = async (req, res) => {
   try {
     const post = await Post.create(req.body);
@@ -34,6 +35,7 @@ const addPost = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
 // This Updates a post on the Blog
 const updatePost = async (req, res) => {
   try {
