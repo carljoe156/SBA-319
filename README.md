@@ -1,5 +1,8 @@
 # SBA-Module-319-MongoDB-Application
 
+A blog backend with functionalities of Users, Posts and Comments
+currently, this project can be reviewed via POSTMAN using the HTTP verbs and Routes below.
+
 ## Objectives
 
 - Create a server application with Node, Express, and MongoDB.
@@ -31,7 +34,7 @@
   **Seed Routes**:
 
   - [https://localhost:5052/api/fruits/seed](https://localhost:5000/api/seed/seed)  
-    Temporarily seeds the data.
+    Temporarily seeds the data. As of now, you can manually seed via POSTMAN.
 
 | HTTP Verbs | Route             | Purpose                           |
 | ---------- | ----------------- | --------------------------------- |

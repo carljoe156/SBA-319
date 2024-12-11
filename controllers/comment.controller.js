@@ -2,8 +2,13 @@ const Comment = require("../models/comment.model");
 
 // Gets all comments for our Blog
 const getComments = async (req, res) => {
+  const { page = 1, limit = 10 } = req.query;
   try {
-    const comments = await Comment.find({}).populate("author");
+    const comments = await Comment.find({})
+      .populate("author")
+      .skip((page - 1) * limit)
+      .limit(Number(limit))
+      .sort({ createdAt: -1 });
     res.status(200).json(comments);
   } catch (error) {
     res.status(500).json({ message: error.message });
