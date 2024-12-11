@@ -28,12 +28,12 @@ currently, this project can be reviewed via POSTMAN using the HTTP verbs and Rou
 #### Routes
 
 - **Homepage**:  
-  [https://localhost:5052](https://localhost:5000)  
-  This brings you to the homepage of the app.
+  [https://localhost:5000](https://localhost:5000)  
+  This brings you to the homepage of the app.(Via POSTMAN of course.)
 
   **Seed Routes**:
 
-  - [https://localhost:5052/api/fruits/seed](https://localhost:5000/api/seed/seed)  
+  - [https://localhost:5000/api/seed/seed](https://localhost:5000/api/seed/seed)  
     Temporarily seeds the data. As of now, you can manually seed via POSTMAN.
 
 | HTTP Verbs | Route             | Purpose                           |
