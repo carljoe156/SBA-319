@@ -1,4 +1,4 @@
-// This our model schema for our User
+// This our model schema for our User.
 // Adding validations trim, and length.
 const mongoose = require("mongoose");
 

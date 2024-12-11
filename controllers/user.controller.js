@@ -1,6 +1,6 @@
 const User = require("../models/user.model");
 
-// Gets all users from our Blog
+// Gets all users from our Blog database
 const getUsers = async (req, res) => {
   try {
     const users = await User.find({});
@@ -10,7 +10,7 @@ const getUsers = async (req, res) => {
   }
 };
 
-// Get user by ID
+// Get user by ID from the database
 const getUserById = async (req, res) => {
   try {
     const user = await User.findById(req.params.id);
@@ -23,7 +23,7 @@ const getUserById = async (req, res) => {
   }
 };
 
-// Adds a new user
+// Adds a new user to the database
 const addUser = async (req, res) => {
   try {
     const user = await User.create(req.body);
@@ -33,7 +33,7 @@ const addUser = async (req, res) => {
   }
 };
 
-// Updates a user
+// Updates a user in the database
 const updateUser = async (req, res) => {
   try {
     const user = await User.findByIdAndUpdate(req.params.id, req.body, {
@@ -48,7 +48,7 @@ const updateUser = async (req, res) => {
   }
 };
 
-// Deletes a user
+// Deletes a user in the database
 const deleteUser = async (req, res) => {
   try {
     const user = await User.findByIdAndDelete(req.params.id);

@@ -1,4 +1,4 @@
-// Get all posts on the Blog
+// Get all posts on the Blog database
 const Post = require("../models/post.model");
 
 const getPosts = async (req, res) => {
@@ -10,7 +10,7 @@ const getPosts = async (req, res) => {
   }
 };
 
-// This Gets post by its ID
+// This Gets post by its ID for the Blog database
 const getPostById = async (req, res) => {
   try {
     const post = await Post.findById(req.params.id)
@@ -25,7 +25,7 @@ const getPostById = async (req, res) => {
   }
 };
 
-// This Create a new post for the Blog
+// This Create a new post for the Blog database
 // This works
 const addPost = async (req, res) => {
   try {
@@ -36,7 +36,7 @@ const addPost = async (req, res) => {
   }
 };
 
-// This Updates a post on the Blog
+// This Updates a post on the Blog database
 const updatePost = async (req, res) => {
   try {
     const post = await Post.findByIdAndUpdate(req.params.id, req.body, {
@@ -51,7 +51,7 @@ const updatePost = async (req, res) => {
   }
 };
 
-// This Deletes a post on the Blog
+// This Deletes a post on the Blog database
 const deletePost = async (req, res) => {
   try {
     const post = await Post.findByIdAndDelete(req.params.id);

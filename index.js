@@ -38,7 +38,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// Our Routes
+// Our Routes...
 app.use("/api/posts", postRoute);
 app.use("/api/comments", commentRoute);
 app.use("/api/users", userRoute);

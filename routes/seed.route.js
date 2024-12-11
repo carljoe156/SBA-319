@@ -1,3 +1,4 @@
+// Our Seed Routes
 const express = require("express");
 const router = express.Router();
 const User = require("../models/user.model");
@@ -12,7 +13,7 @@ router.post("/seed", async (req, res) => {
       {
         username: "john_doe",
         email: "john@example.com",
-        password: "password123", // We could hash passwords, but we're skipping it for seeding
+        password: "password123", // We could hash passwords, but we're skipping it for seeding !
       },
       {
         username: "jane_smith",

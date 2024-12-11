@@ -1,3 +1,4 @@
+// To connect to our Mongodb Database
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();

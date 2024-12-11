@@ -1,4 +1,4 @@
-// This our model schema for our Comments
+// This our model schema for our Comments.
 const mongoose = require("mongoose");
 
 const CommentSchema = new mongoose.Schema(

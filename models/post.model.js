@@ -1,4 +1,4 @@
-// This our model schema for our Post
+// This our model schema for our Post.
 const mongoose = require("mongoose");
 
 const PostSchema = new mongoose.Schema(

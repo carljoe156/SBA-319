@@ -1,6 +1,6 @@
 const Comment = require("../models/comment.model");
 
-// Gets all comments for our Blog
+// Gets all comments for our Blog database
 const getComments = async (req, res) => {
   const { page = 1, limit = 10 } = req.query;
   try {
@@ -14,7 +14,7 @@ const getComments = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
-// Gets comment by ID
+// Gets comment by ID for our Blog database
 const getCommentById = async (req, res) => {
   try {
     const comment = await Comment.findById(req.params.id).populate("author");
@@ -27,7 +27,7 @@ const getCommentById = async (req, res) => {
   }
 };
 
-// Create a new comment for our user
+// Create a new comment for our user for our Blog database
 const addComment = async (req, res) => {
   try {
     const comment = await Comment.create(req.body);
@@ -37,7 +37,7 @@ const addComment = async (req, res) => {
   }
 };
 
-// Delete a comment from our Blog
+// Delete a comment from our Blog database
 const deleteComment = async (req, res) => {
   try {
     const comment = await Comment.findByIdAndDelete(req.params.id);
