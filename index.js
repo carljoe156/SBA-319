@@ -42,7 +42,8 @@ app.use((req, res, next) => {
 app.use("/api/posts", postRoute);
 app.use("/api/comments", commentRoute);
 app.use("/api/users", userRoute);
-app.use("/api/seed", seedRoute);
+// app.use("/api/seed", seedRoute);
+app.use("/api", seedRoute); //temp
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

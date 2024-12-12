@@ -33,7 +33,7 @@ currently, this project can be reviewed via POSTMAN using the HTTP verbs and Rou
 
   **Seed Routes**:
 
-  - [https://localhost:5000/api/seed/seed](https://localhost:5000/api/seed/seed)  
+  - [https://localhost:5000/api/seed/](https://localhost:5000/api/seed/seed)  
     Temporarily seeds the data. As of now, you can manually seed via POSTMAN.
 
 | HTTP Verbs | Route             | Purpose                           |
